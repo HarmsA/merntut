@@ -6,12 +6,14 @@ import Signout from './pages/Signout'
 import Signup from './Signup'
 import About from './pages/About'
 import Profile from './pages/Profile'
+import Header from './components/Header'
 
 
 export default function App() {
   const y = 15
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/sign-in' element={<Signin/>}/>
